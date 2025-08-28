@@ -1,7 +1,7 @@
 # Day-to-Night Translation using CycleGAN
 
 **Report:** [UnpairedDayToNight.pdf](docs/UnpairedDayToNight.pdf)  
-**Colab Notebook:** [Open in Colab](https://colab.research.google.com/github/tarungangadhar/day-to-night-cycleGAN/blob/main/code/UnpairedDayToNight.ipynb)  
+**Colab Notebook:** [Open in Colab](https://colab.research.google.com/drive/1ezn_tiMShosXUccKUCosbrBKKuUjvsQW?usp=sharing)  
 **Project Website:** [View Website](https://tarungangadhar.github.io/day-to-night-cycleGAN/)
 
 ---
