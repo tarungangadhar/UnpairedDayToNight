@@ -71,10 +71,3 @@ Cycle consistency improves steadily over training:
 
 
 
----
-
-## 🚀 Usage
-
-### 1. Requirements
-```bash
-pip install torch torchvision matplotlib pillow tqdm
