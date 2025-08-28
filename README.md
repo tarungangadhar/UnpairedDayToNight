@@ -21,10 +21,6 @@ The goal is to enhance datasets for autonomous driving research where night data
 - **Dataset:** BDD100K (10k subset). Day/Night domain split was generated using **luminance-based heuristics**.
 - **Implementation:** PyTorch, trained with Adam optimizer (`lr=0.0002`)
 
-<div align="center">
-  <img src="assets/method.png" alt="Method Overview" width="600">
-</div>
-
 ---
 
 ## 📊 Results
