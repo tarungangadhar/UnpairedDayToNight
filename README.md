@@ -1,6 +1,5 @@
 # Day-to-Night Translation using CycleGAN
 
-**Author:** Tarun Gangadhar Vadaparthi  
 **Report:** [UnpairedDayToNight.pdf](docs/UnpairedDayToNight.pdf)  
 **Colab Notebook:** [Open in Colab](https://colab.research.google.com/github/tarungangadhar/day-to-night-cycleGAN/blob/main/code/UnpairedDayToNight.ipynb)  
 **Project Website:** [View Website](https://tarungangadhar.github.io/day-to-night-cycleGAN/)
