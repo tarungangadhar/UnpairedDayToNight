@@ -41,7 +41,7 @@ The goal is to enhance datasets for autonomous driving research where night data
 **Histograms of Metrics (A→B and B→A):**
 
 <div align="center">
-  <img src="assets/metrics_hist.png" alt="Histograms of SSIM, PSNR, LPIPS for A→B and B→A" width="850">
+  <img src="assets/metricshist.png" alt="Histograms of SSIM, PSNR, LPIPS for A→B and B→A" width="850">
 </div>
 
 ---
@@ -54,7 +54,7 @@ Cycle consistency improves steadily over training:
 - LPIPS drops to ~0.20  
 
 <div align="center">
-  <img src="assets/metrics_epochs.png" alt="SSIM, PSNR, LPIPS trends across epochs" width="850">
+  <img src="assets/metricsepochs.png" alt="SSIM, PSNR, LPIPS trends across epochs" width="850">
 </div>
 
 ---
@@ -65,11 +65,11 @@ Cycle consistency improves steadily over training:
 |-------------|-------------------|
 | ![Day](assets/sampleday.png) | ![Night](assets/samplenight.png) |
 
-**Day → Night vs Night → Day Comparison**
+| Input (Night) | Generated (Day) |
+|-------------|-------------------|
+| ![Day](assets/samplenight1.png) | ![Night](assets/sampleday1.png) |
 
-<div align="center">
-  <img src="docs/assets/final_comparison.png" alt="Day-to-Night and Night-to-Day Comparison" width="850">
-</div>
+
 
 ---
 
