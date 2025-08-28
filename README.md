@@ -7,13 +7,13 @@
 
 ---
 
-## 📌 Abstract
+##  Abstract
 This project explores **unpaired image-to-image translation** for converting **daytime driving scenes into nighttime equivalents** using **CycleGAN**. Unlike paired supervised methods, CycleGAN leverages cycle-consistency and adversarial training to learn mappings between **Day ↔ Night** domains without requiring aligned image pairs.  
 The goal is to enhance datasets for autonomous driving research where night data is limited.
 
 ---
 
-## 🛠 Method
+##  Method
 
 - **Architecture:** CycleGAN (two generators + two discriminators)
 - **Adversarial Objective:** Least-Squares GAN (LSGAN) loss
@@ -25,7 +25,7 @@ The goal is to enhance datasets for autonomous driving research where night data
 
 ---
 
-## 📊 Results
+## Results
 
 ### Quantitative Performance
 - **Day → Night (A→B):**  
