@@ -3,7 +3,7 @@
 **Author:** Tarun Gangadhar Vadaparthi  
 **Report:** [UnpairedDayToNight.pdf](docs/UnpairedDayToNight.pdf)  
 **Colab Notebook:** [Open in Colab](https://colab.research.google.com/drive/1ezn_tiMShosXUccKUCosbrBKKuUjvsQW?usp=sharing)  
-**Project Website:** [View Website](https://tarungangadhar.github.io/day-to-night-cycleGAN/)
+**Project Website:** [View Website](https://tarungangadhar.github.io/UnpairedDayToNightWebsite/)
 
 ---
 
