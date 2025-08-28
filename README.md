@@ -1,7 +1,8 @@
 # Day-to-Night Translation using CycleGAN
 
+**Author:** Tarun Gangadhar Vadaparthi  
 **Report:** [UnpairedDayToNight.pdf](docs/UnpairedDayToNight.pdf)  
-**Colab Notebook:** [Open in Colab](https://colab.research.google.com/drive/1ezn_tiMShosXUccKUCosbrBKKuUjvsQW?usp=sharing)  
+**Colab Notebook:** [Open in Colab](https://colab.research.google.com/github/tarungangadhar/day-to-night-cycleGAN/blob/main/code/UnpairedDayToNight.ipynb)  
 **Project Website:** [View Website](https://tarungangadhar.github.io/day-to-night-cycleGAN/)
 
 ---
@@ -21,6 +22,7 @@ The goal is to enhance datasets for autonomous driving research where night data
 - **Dataset:** BDD100K (10k subset). Day/Night domain split was generated using **luminance-based heuristics**.
 - **Implementation:** PyTorch, trained with Adam optimizer (`lr=0.0002`)
 
+
 ---
 
 ## 📊 Results
@@ -36,21 +38,43 @@ The goal is to enhance datasets for autonomous driving research where night data
   - PSNR: **mid-20 dB range**  
   - LPIPS: **~0.18 – 0.22**
 
-**Trends:**  
-- SSIM increased steadily into the low–mid 0.8s  
-- PSNR stabilized in the mid-20s  
-- LPIPS dropped to ≈ **0.18–0.19** by the last epoch
-
-### Qualitative Samples
-
-| Input (Day) | Generated (Night) | Cycle Reconstructed (Day) |
-|-------------|-------------------|---------------------------|
-| ![Day](assets/sampleday.png) | ![Night](assets/samplenight.png) | ![Cycle](assets/sample_cycle.png) |
-
-### Comparison Grid
+**Histograms of Metrics (A→B and B→A):**
 
 <div align="center">
-  <img src="assets/comparison.png" alt="Day-to-Night Qualitative Comparison" width="700">
+  <img src="assets/metrics_hist.png" alt="Histograms of SSIM, PSNR, LPIPS for A→B and B→A" width="850">
 </div>
 
 ---
+
+### Trends Across Epochs
+
+Cycle consistency improves steadily over training:
+- SSIM rises into the low–mid 0.8s  
+- PSNR increases into the mid-20 dB range  
+- LPIPS drops to ~0.20  
+
+<div align="center">
+  <img src="assets/metrics_epochs.png" alt="SSIM, PSNR, LPIPS trends across epochs" width="850">
+</div>
+
+---
+
+### Qualitative Results
+
+| Input (Day) | Generated (Night) |
+|-------------|-------------------|
+| ![Day](assets/sampleday.png) | ![Night](assets/samplenight.png) |
+
+**Day → Night vs Night → Day Comparison**
+
+<div align="center">
+  <img src="docs/assets/final_comparison.png" alt="Day-to-Night and Night-to-Day Comparison" width="850">
+</div>
+
+---
+
+## 🚀 Usage
+
+### 1. Requirements
+```bash
+pip install torch torchvision matplotlib pillow tqdm
